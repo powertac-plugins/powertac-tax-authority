@@ -17,13 +17,16 @@
 package org.powertac.taxauthority
 
 import org.powertac.common.interfaces.TaxAuthority
-import org.powertac.common.command.CashDoUpdateCmd
 import org.powertac.common.Competition
 
 class TaxAuthorityService implements TaxAuthority {
 
   static transactional = true
 
+  public void taxBrokers(){return};
+  public void subsidiseBrokers(){return};
+  
+ /* TODO change code with new 
   List<CashDoUpdateCmd> taxBrokers(Competition competition) {
     log.info "taxBrokers ${competition}"
     return []
@@ -32,5 +35,5 @@ class TaxAuthorityService implements TaxAuthority {
   List<CashDoUpdateCmd> subsidiseBrokers(Competition competition) {
     log.info "subsidiseBrokers ${competition}"
     return []
-  }
+  }*/
 }
